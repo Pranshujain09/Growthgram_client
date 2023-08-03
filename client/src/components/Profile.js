@@ -20,7 +20,7 @@ export default function Profile() {
 
 
   useEffect(() => {
-    fetch("http://localhost:5000/myposts",{
+    fetch("https://growthgram-server.onrender.com/myposts",{
       headers:{
         "Authorization": "Bearer " + localStorage.getItem("cookie"),
       }

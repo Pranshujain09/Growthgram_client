@@ -32,7 +32,7 @@ export default function SignUp() {
       return;
     }
     //sending to the server
-    fetch("http://localhost:5000/create", {
+    fetch("https://growthgram-server.onrender.com/create", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
@@ -63,7 +63,7 @@ export default function SignUp() {
           <img className="signUplogo" src={logo} alt="" />
           <p className="loginPara">
             Sign up to see photos and videos
-            <br /> from your friend
+            <br /> from your friends
           </p>
           <div>
             <input

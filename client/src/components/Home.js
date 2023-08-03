@@ -20,7 +20,7 @@ export default function Home() {
     }
 
     //Fetching all posts
-    fetch("http://localhost:5000/allPosts", {
+    fetch("https://growthgram-server.onrender.com/allPosts", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("cookie"),
       },
@@ -45,7 +45,7 @@ export default function Home() {
   };
 
   const likePost = (id) => {
-    fetch("http://localhost:5000/like", {
+    fetch("https://growthgram-server.onrender.com/like", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -73,7 +73,7 @@ export default function Home() {
 
   const unlikePost = (id) => {
     // fetch("http://localhost:5000/unlike", {
-      fetch("http://localhost:5000/unlike", {
+      fetch("https://growthgram-server.onrender.com/unlike", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -99,7 +99,7 @@ export default function Home() {
   };
 
   const makecomment = (text, id) => {
-    fetch("http://localhost:5000/comment", {
+    fetch("https://growthgram-server.onrender.com/comment", {
       method: "put",
       headers: {
         "Content-Type": "application/json",

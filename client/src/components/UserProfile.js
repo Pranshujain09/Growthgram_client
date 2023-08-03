@@ -11,7 +11,9 @@ export default function UserProfile() {
 
 
   useEffect(() => {
-    fetch(`http://localhost:5000/user/${userid}`, {
+    // fetch(`http://localhost:5000/user/${userid}`, {
+      fetch(`https://growthgram-server.onrender.com/user/${userid}`, {
+
       headers: {
         Authorization: "Bearer " + localStorage.getItem("cookie"),
       },

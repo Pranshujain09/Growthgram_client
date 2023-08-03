@@ -25,7 +25,7 @@ export default function Posts() {
     // saving post to mongodb
     if (url) {
       // fetch("http://localhost:5000/createPost", {
-        fetch("http://localhost:5000/createPost", {
+        fetch("https://growthgram-server.onrender.com/createPost", {
         method: "Post",
         headers: {
           "Content-Type": "application/json",
