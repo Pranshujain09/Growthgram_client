@@ -12,7 +12,8 @@ export default function PostDetail({ item, toggleDetails }) {
   const removePost = (postId) => {
     console.log(postId);
     if (window.confirm("Do you really want to delete this post ?")) {
-      fetch(`http://localhost:5000/deletePost/${postId}`, {
+      // fetch(`http://localhost:5000/deletePost/${postId}`, {
+        fetch(`http://localhost:5000/deletePost/${postId}`, {
         method: "delete",
         headers: {
           Authorization: "Bearer " + localStorage.getItem("cookie"),

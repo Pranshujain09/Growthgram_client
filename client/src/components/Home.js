@@ -72,7 +72,8 @@ export default function Home() {
   };
 
   const unlikePost = (id) => {
-    fetch("http://localhost:5000/unlike", {
+    // fetch("http://localhost:5000/unlike", {
+      fetch("http://localhost:5000/unlike", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
